@@ -1,0 +1,38 @@
+{
+  "name": "safe-function",
+  "version": "1.0.0",
+  "description": "安全的 js 函数",
+  "main": "dist/safe-function.cjs.js", 
+  "module": "dist/safe-function.esm.js", 
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjm0/safe-function.git"
+  },
+  "keywords": [
+    "safe-function",
+    "safe-function.js"
+  ],
+  "author": "前端一锅煮",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/cjm0/safe-function/issues"
+  },
+  "homepage": "https://github.com/cjm0/safe-function#readme",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.41.0"
+  }
+}

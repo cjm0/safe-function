@@ -1,0 +1,26 @@
+# /dist 基于 .gitignore 文件
+# dist 目录加文件
+# dsit/ 目录
+# * 任意字符不包含 /
+# ** 任意字符包含 /
+
+# Logs
+logs
+*.log
+*.local
+
+# node_modules
+node_modules
+
+# Editor directories and files
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
