@@ -1,15 +1,19 @@
 {
   "name": "safe-function",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "安全的 js 函数",
-  "main": "dist/safe-function.cjs.js", 
-  "module": "dist/safe-function.esm.js", 
+  "main": "dist/safe-function.cjs.js",
+  "module": "dist/safe-function.esm.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "prod": "npm run build && npm test",
+    
+    "login": "npm config set registry https://registry.npmjs.org && npm login",
+    "publish": "npm whoami && npm publish"
   },
   "repository": {
-    "type": "git",
+    "type": "github",
     "url": "git+https://github.com/cjm0/safe-function.git"
   },
   "keywords": [

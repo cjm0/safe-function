@@ -56,10 +56,11 @@ ES 模块格式：
 
 `import { newURL } from 'safe-function';`
 
-## 函数列表
+## 函数列表对应关系
 
-newURL() => 封装 new URL()
+newURL() => new URL()
 
-JsonPrase() => 封装 JSON.parse()
+jsonPrase() => JSON.parse()
+jsonStringify() => JSON.stringify()
 
 ## 注意事项

@@ -3,7 +3,8 @@
 
 const { 
   newURL,
-  JsonPrase
+  jsonPrase,
+  jsonStringify,
 } = require('../dist/safe-function.cjs.js');
 
 // newURL
@@ -27,11 +28,18 @@ test('newURL should return the correct URL', () => {
   expect(newURL('abc123').href).toBe(undefined);
 });
 
-// JsonPrase
-test('JsonPrase should return the correct obj', () => {
-  const objStr1 = '{ "name": "JsonPrase" }';
-  expect(JsonPrase(objStr1).name).toBe('JsonPrase');
+// jsonPrase
+test('jsonPrase should return the correct obj', () => {
+  const objStr1 = '{ "name": "safe-function" }';
+  expect(jsonPrase(objStr1).name).toBe('safe-function');
 
   const objStr2 = 'test';
-  expect(JsonPrase(objStr2)).toBe('');
+  expect(jsonPrase(objStr2)).toBe(null);
 });
+
+// jsonStringify
+test('jsonStringify should return the correct string', () => {
+  const obj1 = { name: "safe-function" };
+  expect(typeof jsonStringify(obj1)).toBe('string');
+});
+
