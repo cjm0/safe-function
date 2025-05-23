@@ -11,6 +11,10 @@
 
 封装常用 js 函数，自动处理报错，避免在使用的时候到处加 try catch
 
+轻量，包大小 2kb
+
+## 用处
+
 使用前 
 ```js
 try {
@@ -46,7 +50,7 @@ let urlObj = newURL(url);
 
 包下载：`npm i safe-function`
 
-## 使用
+## 使用方法
 
 CommonJS 格式：
 
@@ -56,11 +60,37 @@ ES 模块格式：
 
 `import { newURL } from 'safe-function';`
 
-## 函数列表对应关系
+## api 列表和对应关系
 
-newURL() => new URL()
+### url
 
-jsonPrase() => JSON.parse()
-jsonStringify() => JSON.stringify()
+newURL(href)
+- new URL()
+
+### JSON
+
+jsonPrase(str)
+- JSON.parse()
+
+jsonStringify(obj)
+- JSON.stringify()
+
+### localStorage
+
+setLocal(key, value, errCB)
+- localStorage.setItem()
+- errCB 回调函数，当 localStorage 存储数据超过最大容量时执行
+
+getLocal(key) 
+- localStorage.getItem()
+
+removeOneLocal(key) 
+- localStorage.removeItem()
+
+removeAllLocal() 
+- localStorage.clear()
+
+removeArrayLocal(keys) 
+- 清除指定数组 keys 的数据
 
 ## 注意事项
