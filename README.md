@@ -64,31 +64,32 @@ ES 模块格式：
 
 ### url
 
-newURL(href)
-- new URL()
+newURL(href) => new URL()
 
 ### JSON
 
-jsonPrase(str)
-- JSON.parse()
+jsonPrase(str) => JSON.parse()
 
-jsonStringify(obj)
-- JSON.stringify()
+jsonStringify(obj) => JSON.stringify()
+
+### dom
+
+getCptStyle(el, att, after) => getComputedStyle()
+
+selectorOne(select) => document.querySelector()
+
+selectorAll(select) => document.querySelectorAll()
 
 ### localStorage
 
-setLocal(key, value, errCB)
-- localStorage.setItem()
+setLocal(key, value, errCB) => localStorage.setItem()
 - errCB 回调函数，当 localStorage 存储数据超过最大容量时执行
 
-getLocal(key) 
-- localStorage.getItem()
+getLocal(key) => localStorage.getItem()
 
-removeOneLocal(key) 
-- localStorage.removeItem()
+removeOneLocal(key) => localStorage.removeItem()
 
-removeAllLocal() 
-- localStorage.clear()
+removeAllLocal() => localStorage.clear()
 
 removeArrayLocal(keys) 
 - 清除指定数组 keys 的数据

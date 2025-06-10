@@ -4,21 +4,21 @@
  * @link 函数参考：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
  */
 
-import { newURL } from "./url.js";
-import { jsonPrase, jsonStringify } from "./json.js";
-import { 
-  setLocal,
-  getLocal,
-  removeOneLocal,
-  removeAllLocal,
-  removeArrayLocal,
-} from "./storage.js";
+import { newURL } from "./url"
+
+import { jsonPrase, jsonStringify } from "./json"
+import { getCptStyle, selectorOne, selectorAll, } from './dom'
+import { setLocal, getLocal, removeOneLocal, removeAllLocal, removeArrayLocal, } from "./storage"
 
 export { 
   newURL,
 
   jsonPrase,
   jsonStringify,
+
+  getCptStyle, 
+  selectorOne, 
+  selectorAll,
 
   setLocal,
   getLocal,

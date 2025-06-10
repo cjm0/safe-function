@@ -1,6 +1,6 @@
-// url 相关封装
+// url 相关方法封装
 
-import { log } from "./com.js";
+import { log } from './base'
 
 /**
  * new URL 封装：js 获取 url 字符串的解析对象
@@ -25,13 +25,13 @@ import { log } from "./com.js";
 
   newURL('abc123') => URL {}
 */
-function newURL(url, base = undefined) {
+function newURL(url: string, base = undefined): URL | {} {
   try {
-    return new URL(url, base);
+    return new URL(url, base)
   } catch (error) {
-    log("_newURL error", error?.message);
+    log('newURL error', error)
   }
-  return {};
+  return {}
 }
 
 export {

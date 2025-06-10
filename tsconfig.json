@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "rootDir": "./", // 根目录
+    "outDir": "dist", // 输出目录
+
+    "module": "es2015", // 模块系统
+    "target": "es2015", // 编译目标版本
+    "lib": ["es2017", "DOM"], // 编译过程中需要引入的库文件
+
+    "esModuleInterop": true, // 启用 ES 模块互操作性
+    "sourceMap": true, // 是否生成 source map
+    "allowJs": true, // 允许编译 JavaScript 文件
+
+    "noEmit": true, // 只做检查不输出文件，即编译后不会生成任何js文件，已由 babel-loader 插件转译
+    
+    "strict": true, // 启用严格模式
+    "noImplicitAny": true, // 禁止隐式 any 类型
+  },
+  "include": ["src/**/*.ts"] // 包含的文件路径
+}
